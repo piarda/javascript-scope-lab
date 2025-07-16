@@ -2,18 +2,18 @@
   "stats": {
     "suites": 6,
     "tests": 13,
-    "passes": 12,
+    "passes": 13,
     "pending": 0,
-    "failures": 1,
-    "start": "2025-07-14T21:52:05.929Z",
-    "end": "2025-07-14T21:52:06.213Z",
-    "duration": 284
+    "failures": 0,
+    "start": "2025-07-16T22:24:40.685Z",
+    "end": "2025-07-16T22:24:41.195Z",
+    "duration": 510
   },
   "tests": [
     {
       "title": "is declared using const",
       "fullTitle": "index.js burgers is declared using const",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -57,12 +57,7 @@
       "fullTitle": "index.js addBurger when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "Expected newBurger to be declared using const and have the value 'Flatburger': expected '// Write your solution in this file!\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\n// both are globe scopes, outside of any function\\n\\nfunction addBurger() {\\n  var newBurger = \\'Flatburger\\';\\n  burgers.push(newBurger);\\n}\\n// var makes this a function-scope variable\\n\\nif(true) {\\n    const anotherNewBurger = \\'Maple Bacon Burger\\';\\n    burgers.push(anotherNewBurger);\\n\\n    function changeFeaturedDrink() {\\n        featuredDrink = \\'The JavaShake\\';\\n    }\\n}' to match /const[ \\n]+newBurger[ \\n]*=[ \\n]*['\"`]Flatburger['\"`]/",
-        "showDiff": false,
-        "actual": "// Write your solution in this file!\nconst burgers = ['Hamburger', 'Cheeseburger'];\nlet featuredDrink = 'Strawberry Milkshake';\n// both are globe scopes, outside of any function\n\nfunction addBurger() {\n  var newBurger = 'Flatburger';\n  burgers.push(newBurger);\n}\n// var makes this a function-scope variable\n\nif(true) {\n    const anotherNewBurger = 'Maple Bacon Burger';\n    burgers.push(anotherNewBurger);\n\n    function changeFeaturedDrink() {\n        featuredDrink = 'The JavaShake';\n    }\n}",
-        "stack": "AssertionError: Expected newBurger to be declared using const and have the value 'Flatburger': expected '// Write your solution in this file!\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\n// both are globe scopes, outside of any function\\n\\nfunction addBurger() {\\n  var newBurger = \\'Flatburger\\';\\n  burgers.push(newBurger);\\n}\\n// var makes this a function-scope variable\\n\\nif(true) {\\n    const anotherNewBurger = \\'Maple Bacon Burger\\';\\n    burgers.push(anotherNewBurger);\\n\\n    function changeFeaturedDrink() {\\n        featuredDrink = \\'The JavaShake\\';\\n    }\\n}' to match /const[ \\n]+newBurger[ \\n]*=[ \\n]*['\"`]Flatburger['\"`]/\n    at Context.<anonymous> (test/indexTest.js:46:21)\n    at process.processImmediate (node:internal/timers:505:21)"
-      }
+      "err": {}
     },
     {
       "title": "when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
@@ -102,31 +97,18 @@
     {
       "title": "when called, changes the value of the featuredDrink variable to 'The JavaShake'",
       "fullTitle": "index.js changeFeaturedDrink when called, changes the value of the featuredDrink variable to 'The JavaShake'",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
-      "fullTitle": "index.js addBurger when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "Expected newBurger to be declared using const and have the value 'Flatburger': expected '// Write your solution in this file!\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\n// both are globe scopes, outside of any function\\n\\nfunction addBurger() {\\n  var newBurger = \\'Flatburger\\';\\n  burgers.push(newBurger);\\n}\\n// var makes this a function-scope variable\\n\\nif(true) {\\n    const anotherNewBurger = \\'Maple Bacon Burger\\';\\n    burgers.push(anotherNewBurger);\\n\\n    function changeFeaturedDrink() {\\n        featuredDrink = \\'The JavaShake\\';\\n    }\\n}' to match /const[ \\n]+newBurger[ \\n]*=[ \\n]*['\"`]Flatburger['\"`]/",
-        "showDiff": false,
-        "actual": "// Write your solution in this file!\nconst burgers = ['Hamburger', 'Cheeseburger'];\nlet featuredDrink = 'Strawberry Milkshake';\n// both are globe scopes, outside of any function\n\nfunction addBurger() {\n  var newBurger = 'Flatburger';\n  burgers.push(newBurger);\n}\n// var makes this a function-scope variable\n\nif(true) {\n    const anotherNewBurger = 'Maple Bacon Burger';\n    burgers.push(anotherNewBurger);\n\n    function changeFeaturedDrink() {\n        featuredDrink = 'The JavaShake';\n    }\n}",
-        "stack": "AssertionError: Expected newBurger to be declared using const and have the value 'Flatburger': expected '// Write your solution in this file!\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\n// both are globe scopes, outside of any function\\n\\nfunction addBurger() {\\n  var newBurger = \\'Flatburger\\';\\n  burgers.push(newBurger);\\n}\\n// var makes this a function-scope variable\\n\\nif(true) {\\n    const anotherNewBurger = \\'Maple Bacon Burger\\';\\n    burgers.push(anotherNewBurger);\\n\\n    function changeFeaturedDrink() {\\n        featuredDrink = \\'The JavaShake\\';\\n    }\\n}' to match /const[ \\n]+newBurger[ \\n]*=[ \\n]*['\"`]Flatburger['\"`]/\n    at Context.<anonymous> (test/indexTest.js:46:21)\n    at process.processImmediate (node:internal/timers:505:21)"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "is declared using const",
       "fullTitle": "index.js burgers is declared using const",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -161,6 +143,13 @@
     {
       "title": "is a function",
       "fullTitle": "index.js addBurger is a function",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
+      "fullTitle": "index.js addBurger when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -203,7 +192,7 @@
     {
       "title": "when called, changes the value of the featuredDrink variable to 'The JavaShake'",
       "fullTitle": "index.js changeFeaturedDrink when called, changes the value of the featuredDrink variable to 'The JavaShake'",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }

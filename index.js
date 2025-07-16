@@ -5,10 +5,9 @@ let featuredDrink = 'Strawberry Milkshake';
 // both are global scopes, outside of any function
 
 function addBurger() {
-  var newBurger = 'Flatburger';
+  const newBurger = 'Flatburger';
   burgers.push(newBurger);
 }
-// var makes this a function-scope variable
 
 if(true) {
     const anotherNewBurger = 'Maple Bacon Burger';
